@@ -1,5 +1,3 @@
-"use client"
-
 import { Button } from "@/components/ui/button"
 import { Scale } from "lucide-react"
 import { useState, useEffect } from "react"
@@ -68,3 +66,4 @@ export function Navigation() {
     </nav>
   )
 }
+

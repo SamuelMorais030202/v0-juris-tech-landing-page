@@ -58,3 +58,4 @@ export function BenefitsSection() {
     </section>
   )
 }
+

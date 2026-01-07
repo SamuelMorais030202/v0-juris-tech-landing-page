@@ -1,30 +1,86 @@
-# JurisTech landing page
+# JurisTech Landing Page
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
+Landing page moderna para JurisTech construída com React + Vite + TypeScript + Tailwind CSS.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/samuelmorais030202s-projects/v0-juris-tech-landing-page)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/kWAlBhwA21H)
+## 🚀 Tecnologias
 
-## Overview
+- **React 19** - Biblioteca UI
+- **Vite** - Build tool e dev server
+- **TypeScript** - Tipagem estática
+- **Tailwind CSS v4** - Estilização
+- **Lucide React** - Ícones
+- **Radix UI** - Componentes acessíveis
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+## 📦 Instalação
 
-## Deployment
+```bash
+# Instalar dependências
+pnpm install
+# ou
+npm install
+# ou
+yarn install
+```
 
-Your project is live at:
+## 🛠️ Desenvolvimento
 
-**[https://vercel.com/samuelmorais030202s-projects/v0-juris-tech-landing-page](https://vercel.com/samuelmorais030202s-projects/v0-juris-tech-landing-page)**
+```bash
+# Iniciar servidor de desenvolvimento
+pnpm dev
+# ou
+npm run dev
+# ou
+yarn dev
+```
 
-## Build your app
+Acesse: http://localhost:5173
 
-Continue building your app on:
+## 🏗️ Build
 
-**[https://v0.app/chat/kWAlBhwA21H](https://v0.app/chat/kWAlBhwA21H)**
+```bash
+# Build para produção
+pnpm build
+# ou
+npm run build
+# ou
+yarn build
+```
 
-## How It Works
+Os arquivos serão gerados na pasta `dist/`.
 
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+## 📁 Estrutura do Projeto
+
+```
+├── src/
+│   ├── components/        # Componentes React
+│   │   ├── ui/           # Componentes UI base
+│   │   └── ...           # Componentes da landing page
+│   ├── lib/              # Utilitários
+│   ├── App.tsx           # Componente principal
+│   ├── main.tsx          # Entry point
+│   └── index.css         # Estilos globais
+├── public/               # Assets estáticos
+├── index.html            # HTML base
+├── vite.config.ts        # Configuração Vite
+├── tailwind.config.js    # Configuração Tailwind
+└── package.json
+```
+
+## 🎨 Componentes
+
+- **Navigation** - Navegação fixa com scroll effect
+- **HeroSection** - Seção hero principal
+- **FeaturesSection** - Recursos da plataforma
+- **AssistantSection** - Assistente IA
+- **BenefitsSection** - Benefícios e métricas
+- **TestimonialsSection** - Depoimentos
+- **PricingSection** - Planos e preços
+- **CTASection** - Call to action
+- **Footer** - Rodapé
+
+## 📝 Notas
+
+- O projeto usa Tailwind CSS v4 com sintaxe `@import`
+- Todos os componentes são client-side (sem SSR)
+- Imagens estão na pasta `public/`
+- Path aliases configurados: `@/*` → `src/*`
