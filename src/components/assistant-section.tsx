@@ -82,7 +82,7 @@ export function AssistantSection() {
                   <div className="w-8 h-8 rounded-full bg-secondary/20 border-2 border-card" />
                   <div className="w-8 h-8 rounded-full bg-accent/20 border-2 border-card" />
                 </div>
-                <span>+2.500 advogados confiam no JurisTech Assist</span>
+                <span>Seu assistente jurídico digital, disponível 24 horas por dia.</span>
               </div>
             </div>
           </Card>

@@ -44,7 +44,7 @@ export function Footer() {
           </div>
 
           {/* Company */}
-          <div>
+          {/* <div>
             <h3 className="font-semibold mb-4 text-foreground">Empresa</h3>
             <ul className="space-y-2 text-sm">
               <li>
@@ -68,7 +68,7 @@ export function Footer() {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
 
           {/* Contact */}
           <div>
@@ -76,15 +76,15 @@ export function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2 text-muted-foreground">
                 <Mail className="h-4 w-4 mt-0.5 flex-shrink-0" />
-                <span>contato@juristech.com.br</span>
+                <span>moraissamuel009@gmail.com</span>
               </li>
               <li className="flex items-start gap-2 text-muted-foreground">
                 <Phone className="h-4 w-4 mt-0.5 flex-shrink-0" />
-                <span>(11) 3000-0000</span>
+                <span>(38) 98844-9448</span>
               </li>
               <li className="flex items-start gap-2 text-muted-foreground">
                 <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0" />
-                <span>São Paulo, SP - Brasil</span>
+                <span>Paracatu, MG - Brasil</span>
               </li>
             </ul>
           </div>
@@ -94,7 +94,7 @@ export function Footer() {
         <div className="pt-8 border-t border-border">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-muted-foreground">© 2026 JurisTech. Todos os direitos reservados.</p>
-            <div className="flex items-center gap-6 text-sm">
+            {/* <div className="flex items-center gap-6 text-sm">
               <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
                 Privacidade
               </a>
@@ -104,7 +104,7 @@ export function Footer() {
               <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
                 LGPD
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

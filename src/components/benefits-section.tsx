@@ -6,13 +6,13 @@ const benefits = [
     icon: TrendingUp,
     metric: "40%",
     label: "Aumento de Produtividade",
-    description: "Advogados economizam em média 40% do tempo em tarefas administrativas",
+    description: "Redução significativa do tempo gasto com tarefas administrativas",
   },
   {
     icon: Award,
-    metric: "95%",
-    label: "Taxa de Satisfação",
-    description: "Clientes reportam maior satisfação com acompanhamento em tempo real",
+    metric: "100%",
+    label: "Segurança dos Dados",
+    description: "Proteção das informações jurídicas com criptografia e controle de acesso",
   },
   {
     icon: Clock,
@@ -22,9 +22,9 @@ const benefits = [
   },
   {
     icon: Users,
-    metric: "2.500+",
-    label: "Advogados Ativos",
-    description: "Profissionais jurídicos transformando sua prática com JurisTech",
+    metric: "Diária",
+    label: "Atualização Automática",
+    description: "Monitoramento diário dos processos direto das fontes oficiais",
   },
 ]
 

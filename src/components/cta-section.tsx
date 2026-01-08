@@ -2,6 +2,10 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 
 export function CTASection() {
+  const accessInternalArea = () => {
+    window.location.href = "https://juristack.tiflatcorporation.com/login"
+  }
+
   return (
     <section className="py-20 md:py-32 relative overflow-hidden">
       {/* Background gradient */}
@@ -14,22 +18,23 @@ export function CTASection() {
           <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-balance">
             Pronto para transformar sua prática jurídica?
           </h2>
+
           <p className="text-lg md:text-xl text-muted-foreground text-balance max-w-2xl mx-auto">
-            Junte-se a milhares de advogados que já estão usando JurisTech para trabalhar de forma mais inteligente e
-            eficiente.
+            Vá além do básico. Otimize sua operação, ganhe eficiência e coloque seu escritório
+            à frente no mercado jurídico com tecnologia e inteligência artificial.
           </p>
+
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button
               size="lg"
-              className="bg-secondary text-secondary-foreground hover:bg-secondary/90 text-base px-8 h-12 group"
+              className="bg-secondary text-secondary-foreground hover:bg-secondary/90 text-base px-8 h-12 group cursor-pointer"
+              onClick={accessInternalArea}
             >
-              Começar Teste Gratuito de 14 Dias
+              Começar Teste Gratuito
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button size="lg" variant="outline" className="text-base px-8 h-12 bg-transparent">
-              Agendar Demonstração
-            </Button>
           </div>
+
           <p className="text-sm text-muted-foreground">
             Sem cartão de crédito • Cancelamento a qualquer momento • Suporte em português
           </p>
@@ -38,4 +43,3 @@ export function CTASection() {
     </section>
   )
 }
-

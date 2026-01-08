@@ -2,6 +2,10 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight, Sparkles } from "lucide-react"
 
 export function HeroSection() {
+  const accessInternalArea = () => {
+    window.location.href = "https://juristack.tiflatcorporation.com/login"
+  }
+
   return (
     <section className="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden">
       {/* Background gradient */}
@@ -46,20 +50,17 @@ export function HeroSection() {
           >
             <Button
               size="lg"
-              className="bg-secondary text-secondary-foreground hover:bg-secondary/90 text-base px-8 h-12 group"
+              className="bg-secondary text-secondary-foreground hover:bg-secondary/90 text-base px-8 h-12 group cursor-pointer"
+              onClick={() => accessInternalArea()}
             >
               Começar Gratuitamente
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button size="lg" variant="outline" className="text-base px-8 h-12 bg-transparent">
-              Agendar Demonstração
             </Button>
           </div>
 
           {/* Social Proof */}
           <p className="text-sm text-muted-foreground animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
-            Utilizado por mais de <span className="font-semibold text-foreground">2.500+ advogados</span> em todo o
-            Brasil
+            Automação jurídica para quem valoriza tempo e precisão.
           </p>
         </div>
       </div>

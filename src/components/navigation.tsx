@@ -13,6 +13,10 @@ export function Navigation() {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
+  const accessInternalArea = () => {
+    window.location.href = "https://juristack.tiflatcorporation.com/login"
+  }
+
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -54,11 +58,21 @@ export function Navigation() {
           </div>
 
           <div className="flex items-center gap-3">
-            <Button variant="ghost" size="sm" className="hidden md:inline-flex">
+            <Button
+              variant="ghost"
+              size="sm"
+              className="md:inline-flex cursor-pointer"
+              onClick={() => accessInternalArea()}
+              disabled={true}
+            >
               Entrar
             </Button>
-            <Button size="sm" className="bg-secondary text-secondary-foreground hover:bg-secondary/90">
-              Começar Agora
+            <Button
+              size="sm"
+              className="bg-secondary text-secondary-foreground hover:bg-secondary/90 cursor-pointer"
+              onClick={() => accessInternalArea()}
+            >
+              Começar Gratuitamente
             </Button>
           </div>
         </div>
